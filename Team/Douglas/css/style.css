@@ -1,0 +1,76 @@
+:root {
+    --white: #ffffff;
+    --primary: #ffc107;
+    --secondary: #0097a7;
+    --gray: #757575;
+    --dark: #212121;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 199, 0), yellow);
+}
+
+.bar{
+    background-color: #6fa02f;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+
+.main-nav a:hover {
+    background-color: #efff0a;
+}
+
+.main-nav a{
+    color: #ffffff; /*Color para el tipo de letra*/ 
+    text-decoration: none; /*ejemplos: none, normal(bajo pero para enlaces), overline(sobre la linea), underline (bajo la linea de texto),line-through(enmedio del texto) */
+    font-size: 2.0em; /*tamaño de la letra, longitudes relativas*/
+    padding: 1.25em; /*Espacio entre cada una de las letras que se encuentran en el menu*/
+    text-align: center; /*donde se colocara el texto*/
+    display: ruby; /*centra el contenido*/
+    margin-left: 20px;
+}
+
+.hero{
+    height: 28.165em;
+    background-image: url(https://p1.pxfuel.com/preview/619/732/856/forest-trees-mountains-nature-landscape-clouds.jpg);
+    background-size: 1520px 607px;
+    background-repeat: no-repeat;
+    margin-bottom: 2em; /*margen que divide el hero y el div que sigue sobre el*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.50);
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding-bottom: 2em;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content i {
+    font-size: 2.5em;
+    color: var(--primary);
+}
+
+h1{
+    font-size: 5em;
+}
+
+p{
+    font-size: 1.2em;
+}
