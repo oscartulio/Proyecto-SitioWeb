@@ -48,6 +48,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+  
   }
   @media (min-width: 768px) {
     .header nav {
@@ -138,4 +139,14 @@ body{
   .buttom:hover {
     background-color: var(--secondary);
     color: var(--primary);
+  }
+
+  .footer{
+    margin: auto;
+    background-color: black;
+    display: flex;
+    height: 8em;
+    width: 70em;
+    flex-direction: column;
+
   }
