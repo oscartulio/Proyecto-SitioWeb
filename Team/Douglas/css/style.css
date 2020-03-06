@@ -1,14 +1,87 @@
+/*Colores*/
 :root {
     --white: #ffffff;
-    --primary: #ffc107;
-    --secondary: #0097a7;
-    --gray: #757575;
-    --dark: #212121;
+    --primary: #414042;
+    --secondary: #e8a778;
+  }
+
+/*Color de fondo*/
+body{
+    background-color: var(--secondary);
 }
 
-body{
-    background-image: linear-gradient(to bottom, rgb(0, 199, 0), yellow);
+/*Imagen Logo Principal*/
+
+.img_principal{
+    height: 15em;
+    width: 100%;
 }
+
+.img_principal img{
+    height: 15em;
+    width: 100%;
+}
+@media (min-width: 768px) {
+
+    .img_principal{
+        height: 15em;
+        width: 100%;
+    }
+    .img_principal img{
+        height: 15em;
+        width: 100%;
+    }
+    
+  }
+
+/*Menu*/
+
+.header{
+    
+    background-color: var(--primary);
+    width: 100%;
+}
+.header nav {
+    padding: 1em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .header nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .header nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  .header nav a:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    .header nav a {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+  }
+  .header nav a:hover{
+    color: var(--primary);
+    background-color: var(--secondary);
+    
+  }
+
+body{
+    background-color: var(--secondary);
+}
+/*body{
+    background-image: linear-gradient(to bottom, rgb(0, 199, 0), yellow);
+}*/
 
 .bar{
     background-color: #6fa02f;
@@ -31,46 +104,3 @@ body{
     margin-left: 20px;
 }
 
-.hero{
-    height: 28.165em;
-    background-image: url(https://p1.pxfuel.com/preview/619/732/856/forest-trees-mountains-nature-landscape-clouds.jpg);
-    background-size: 1520px 607px;
-    background-repeat: no-repeat;
-    margin-bottom: 2em; /*margen que divide el hero y el div que sigue sobre el*/
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero::after{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.50);
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-}
-
-.hero-content{
-    position: relative;
-    z-index: 1;
-    flex: 1;
-    padding-bottom: 2em;
-    color: var(--white);
-    text-align: center;
-}
-
-.hero-content i {
-    font-size: 2.5em;
-    color: var(--primary);
-}
-
-h1{
-    font-size: 5em;
-}
-
-p{
-    font-size: 1.2em;
-}
