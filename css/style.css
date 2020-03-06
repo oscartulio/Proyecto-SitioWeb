@@ -48,7 +48,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
   @media (min-width: 768px) {
     .header nav {
@@ -80,7 +79,7 @@ body{
   /*Contenedor de Articulos*/
   .container {
     margin: 4em auto;
-    max-width: 1200px;
+    max-width: 85%;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0.3em;
@@ -100,53 +99,51 @@ body{
     }
    
     .service {
-      flex: 0 0 calc(33.3% - 1 em);
+        flex: 0 0 calc(33.3% - 1 em);
     }
   }
   .service {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
-  .icons {
-    display: flex;
-    height: 6.25em;
-    width: 6.25em;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--primary);
-    border-radius: 50%;
-  }
-  .icons i {
-    font-size: 2em;
-    color: var(--white);
-  } 
-
+ 
+  
   /*Leer mas*/
 
   .buttom {
     background-color: var(--primary);
-    text-decoration: none;
-    text-transform: uppercase;
     color: #ffffff;
     padding: 0.625em 3.75em;
     margin-top: 0.625em;
+    transition: background-color 0.3s ease-in-out;
+    align-items: center;
+    
+  }
+  .buttom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
     font-size: 1.25em;
     font-weight: bold;
     display: inline-block;
-    transition: background-color 0.3s ease-in-out;
+    padding-left: 0.5em;
   }
   .buttom:hover {
     background-color: var(--secondary);
     color: var(--primary);
   }
 
-  .footer{
-    margin: auto;
-    background-color: black;
-    display: flex;
-    height: 8em;
-    width: 70em;
-    flex-direction: column;
+  /*Contenedor final de pagina*/
 
+  .final_pag{
+      width: 100%;
+      height: 4em;
+      background-color: var(--primary);
+      color: var(--white);  
+      display: inline-block;
+      padding-left: 1.5em;
+      font-size: 12px;
   }
+  
