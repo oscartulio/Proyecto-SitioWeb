@@ -6,12 +6,14 @@ box-sizing: border-box;
 }
 
 .header{
-  background: url(/imagenes/principal4.png);
+  background-image: url(/imagenes/movil.png);
   background-position: center;
+  background-size: contain;
   background-attachment: contain;
   display: flex;
   flex-flow: column nowrap;
   background-size: cover;
+  height: 40%;
 }
 
 .menu{
@@ -19,40 +21,34 @@ box-sizing: border-box;
 }
 
 
-h1{
-  
+
+body{
+  font-family: 'Montserrat', sans-serif;
 }
 
-/*Colores*/
-:root {
-    --white: #ffffff;
-    --primary: #414042;
-    --secondary: #e8a778;
-  }
 
 /*Color de fondo*/
 body{
     background: url(/imagenes/fondo1.jpg)
 }
 
+.papa{
+  font-size: 18px;
+  font-style: oblique;
+}
+
 @media (min-width: 768px) {
 
-    .img_principal{
-        height: 15em;
-        width: 100%;
-    }
-    .img_principal img{
-        height: 15em;
-        width: 100%;
+    .header{
+      background-image: url(/imagenes/principal5.png);
     }
     
   }
 
-/*Menu*/
 
 
 .header nav {
-    padding: 1em 0;
+    
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -69,6 +65,7 @@ body{
     color: var(--white);
     text-decoration: none;
     font-size: 1.4em;
+    padding: 35px 2em ;
     margin-bottom: 2em;
   }
   .header nav a:last-of-type {
@@ -81,11 +78,14 @@ body{
     }
   }
   .header nav a:hover{
-    color: green;
+    border-style: double;
+    color: #334502;
+    border-radius: 0.8;
+    transition: 1s;
     
   }
 .texto-principal{
-  background: rgba(0, 0, 0,.1);
+  background: rgba(0, 0, 0,.3);
   
 
 }
