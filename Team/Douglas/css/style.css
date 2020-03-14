@@ -2,12 +2,12 @@
 :root {
     --white: #ffffff;
     --primary: #414042;
-    --secondary: #e8a778;
+    --secondary: #3ce936;
   }
 
 /*Color de fondo*/
 body{
-    background-image: linear-gradient(to bottom, #e8a778, #414042); /*Con degradado*/
+    background-image: linear-gradient(to bottom, var(--secondary) , #414042); /*Con degradado*/
 }
 
 /*Imagen Logo Principal*/
@@ -24,11 +24,11 @@ body{
 @media (min-width: 768px) {
 
     .img_principal{
-        height: 15em;
+        height: 20em;
         width: 100%;
     }
     .img_principal img{
-        height: 15em;
+        height: 320px;
         width: 100%;
     }
     
@@ -38,7 +38,7 @@ body{
 
 .header{
     
-    background-color: var(--primary);
+    background-color: rgba(0, 0, 0, .3);
     width: 100%;
 }
 .header nav {
