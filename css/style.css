@@ -29,7 +29,7 @@ body{
 
 /*Color de fondo*/
 body{
-    background: url(/imagenes/fondo1.jpg)
+    background: url(../imagenes/fondo1.jpg)
 }
 
 .papa{
@@ -40,7 +40,7 @@ body{
 @media (min-width: 768px) {
 
     .header{
-      background-image: url(/imagenes/principal5.png);
+      background-image: url(../imagenes/principal5.png);
     }
     
   }
