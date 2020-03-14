@@ -1,0 +1,202 @@
+/*Colores*/
+:root {
+    --white: #ffffff;
+    --primary: #414042;
+    --secondary: #e8a778;
+  }
+
+/*Color de fondo*/
+body{
+    background-image: linear-gradient(to bottom, #e8a778, #414042); /*Con degradado*/
+}
+
+/*Imagen Logo Principal*/
+
+.img_principal{
+    height: 15em;
+    width: 100%;
+}
+
+.img_principal img{
+    height: 15em;
+    width: 100%;
+}
+@media (min-width: 768px) {
+
+    .img_principal{
+        height: 15em;
+        width: 100%;
+    }
+    .img_principal img{
+        height: 15em;
+        width: 100%;
+    }
+    
+  }
+
+/*Menu*/
+
+.header{
+    
+    background-color: var(--primary);
+    width: 100%;
+}
+.header nav {
+    padding: 1em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .header nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .header nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  .header nav a:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    .header nav a {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+  }
+  .header nav a:hover{
+    color: var(--primary);
+    background-color: var(--secondary);
+    
+  }
+
+.bar{
+    background-color: #6fa02f;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+
+.main-nav a:hover {
+    background-color: #efff0a;
+}
+
+.main-nav a{
+    color: #ffffff; /*Color para el tipo de letra*/ 
+    text-decoration: none; /*ejemplos: none, normal(bajo pero para enlaces), overline(sobre la linea), underline (bajo la linea de texto),line-through(enmedio del texto) */
+    font-size: 2.0em; /*tamaño de la letra, longitudes relativas*/
+    padding: 1.25em; /*Espacio entre cada una de las letras que se encuentran en el menu*/
+    text-align: center; /*donde se colocara el texto*/
+    display: ruby; /*centra el contenido*/
+    margin-left: 20px;
+}
+
+.container {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://cumbrepuebloscop20.org/wp-content/uploads/2017/09/medio-ambiente.jpg);
+    background-size: 1265px 715px;
+    margin: 4em auto;
+    max-width: 1200px;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.3em;
+    --webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    margin-bottom: 3em;
+}
+
+h2{
+  color: white;
+  font-weight: bold;
+}
+
+p{
+  color: white;
+  text-align: justify;
+}
+
+/*Social bar*/
+.social-bar{
+  position: fixed;
+  left: 0;
+  top: 45%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.fab{
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+}
+
+.fa-facebook{
+  background: #2E406E;
+  font-size: 25px;
+}
+
+.fa-twitter{
+  background: #339DC5;
+  font-size: 25px;
+}
+
+.fa-youtube{
+  background: #E83028;
+  font-size: 22.2px;
+}
+
+.fa-instagram{
+  background: #3F60A5;
+  font-size: 28.5px;
+}
+
+.fa-whatsapp{
+  background: rgb(33, 211, 78);
+  font-size: 28.5px;
+}
+
+.fab:first-child{
+  border-radius: 1rem 0 0 0;
+}
+
+.fab:last-child{
+  border-radius: 0 0 0 1rem;
+}
+
+.fab:hover{
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*Boton de regresar*/
+.regresar{
+  justify-content: flex-end;
+  padding-bottom: 2em;
+  margin-left: 1em;
+}
+
+.button {
+  background-color: var(--secondary);
+  padding: 1em 3em;
+  border-radius: 0.3em;
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: none;
+}
+
