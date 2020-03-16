@@ -1,0 +1,229 @@
+*{
+margin: 2px;
+padding: 6px;
+box-sizing: border-box;
+
+}
+
+.header{
+  background-image: url(/imagenes/movil.png);
+  background-position: center;
+  background-size: contain;
+  background-attachment: contain;
+  display: flex;
+  flex-flow: column nowrap;
+  background-size: cover;
+  height: 40%;
+}
+
+.menu{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.texto-principal{
+  color: #202020;
+ text-align: center;
+}
+
+/*Color de fondo*/
+body{
+    background: url(../imagenes/fondo1.jpg)
+}
+
+.papa{
+  font-size: 18px;
+  font-style: oblique;
+}
+
+@media (min-width: 768px) {
+
+    .header{
+      background-image: url(../imagenes/principal5.png);
+    }
+    
+  }
+
+
+
+.header nav {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .header nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .header nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 35px 2em ;
+    margin-bottom: 2em;
+  }
+  .header nav a:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    .header nav a {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+  }
+  .header nav a:hover{
+    border-style: double;
+    color: #334502;
+    border-radius: 0.8;
+    transition: 1s;
+    
+  }
+.texto-principal{
+  background: rgba(0, 0, 0,.3);
+  
+
+}
+
+  /*Contenedor de Articulos*/
+  .container {
+    margin: 4em auto;
+    max-width: 85%;
+    padding: 2em;
+    background-color: rgba(0, 0, 0,.2);
+    border-radius: 0.3em;
+    --webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    margin-bottom: 3em;
+  }
+  @media (min-width: 768px) {
+
+    .h2{
+        text-align: center;
+    }
+    .services-container {
+      display: flex;
+      justify-content: space-between;
+    }
+   
+    .service {
+        flex: 0 0 calc(33.3% - 1 em);
+    }
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+ 
+  
+  /*Leer mas*/
+
+  .buttom {
+    border: inherit;
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 0.625em 3.75em;
+    margin-top: auto;
+    transition: background-color 0.3s ease-in-out;
+    align-items: center;
+    
+  }
+  .buttom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 0.5em;
+    background-color: rgba(125, 187, 113, 0.3);
+  }
+  .buttom:hover {
+    color: white;
+    font-size: 15px;
+  }
+ 
+  .services a:hover{
+    color: var(--primary);
+  }
+  /*Contenedor final de pagina*/
+
+  .final_pag{
+      width: 100%;
+      height: 4em;
+      background-color: var(--primary);
+      color: var(--white);  
+      display: inline-block;
+      padding-left: 1.5em;
+      font-size: 12px;
+  }
+  .icons {
+    display: flex;
+    height: 6.25em;
+    width: 6.25em;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(125, 187, 113, 0.3);
+    border-radius: 50%;
+  }
+  .icons i {
+    font-size: 2em;
+    color: #26291d;
+  }
+  
+
+  .icons:hover{
+    background-color:rgba(0, 0, 0,.0);
+    font-size: 15px;
+  }
+  .paragraph{
+    background-color: rgba(125, 187, 113, 0.3);
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .footer{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+  }
+  .final_pag{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 0.5em;
+    height: auto;
+    text-align: center;
+
+  }
+
+
+  @media(min-width:760px){
+    .footer{
+      flex-direction: row;
+    }
+    .paragraph{
+      font-size: 19px;
+    }
+    .final_pag{
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+
+
+
+  
