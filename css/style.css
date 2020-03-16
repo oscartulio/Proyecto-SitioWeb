@@ -190,6 +190,7 @@ body{
   .paragraph{
     background-color: rgba(125, 187, 113, 0.3);
     text-align: justify;
+    font-size: 16px;
   }
 
   .footer{
@@ -213,6 +214,13 @@ body{
   @media(min-width:760px){
     .footer{
       flex-direction: row;
+    }
+    .paragraph{
+      font-size: 19px;
+    }
+    .final_pag{
+      font-size: 18px;
+      text-decoration: none;
     }
   }
 
